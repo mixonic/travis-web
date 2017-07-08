@@ -38,7 +38,7 @@ const branchRowComponent = {
   })
 };
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable(':organization/:repo/branches'),
 
   branchesTabActive: hasClass('active', '#tab_branches'),

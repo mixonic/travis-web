@@ -4,7 +4,7 @@ import {
   text,
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   sections: collection({
     itemScope: 'footer.footer .inner .footer-elem',
     item: {

@@ -17,7 +17,7 @@ const cacheComponent = {
   delete: clickable('.delete-cache-icon')
 };
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable(':organization/:repo/caches'),
 
   tabIsActive: hasClass('active', '#tab_caches'),

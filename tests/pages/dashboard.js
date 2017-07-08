@@ -8,7 +8,7 @@ import {
   isVisible
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   visit: visitable('/dashboard'),
   repoTitle: text('.repo-title'),
   accountFilter: clickable('.dashboard-header .organisation-filter .option-list a:first-of-type'),

@@ -5,7 +5,7 @@ import Ember from 'ember';
   * Avoid use except on events outside Ember that aren’t handled by the built-in test helpers
   * as this slows down the tests.
   */
-export default Ember.Test.registerAsyncHelper('waitForElement', function (app, element) {
+export const helpers = Ember.Test.registerAsyncHelper('waitForElement', function (app, element) {
   return Ember.Test.promise(function (resolve) {
     Ember.Test.adapter.asyncStart();
     var interval = setInterval(function () {

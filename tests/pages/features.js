@@ -3,6 +3,6 @@ import {
   visitable
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   visit: visitable('/features')
 });

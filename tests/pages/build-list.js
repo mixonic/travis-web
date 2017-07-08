@@ -10,7 +10,7 @@ let {
   visitable
 } = PageObject;
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visitBuildHistory: visitable(':organization/:repo/builds'),
   visitPullRequests: visitable(':organization/:repo/pull_requests'),
 

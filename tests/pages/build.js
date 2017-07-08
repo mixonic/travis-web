@@ -26,7 +26,7 @@ const jobComponent = {
   language: text('.job-lang .label-align')
 };
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable(':slug/builds/:build_id'),
   restartBuild: clickable('.action-button--restart'),
   cancelBuild: clickable('.action-button--cancel'),

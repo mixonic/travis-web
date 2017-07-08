@@ -1,11 +1,11 @@
 import Ember from 'ember';
-import Application from '../../app';
-import config from '../../config/environment';
+import Application from "../../src/main";
+import config from "../../config/environment";
 
-import './sign-in-user';
-import './wait-for-element';
+import "./sign-in-user";
+import "./wait-for-element";
 
-export default function startApp(attrs) {
+export const helpers = function startApp(attrs) {
   let application;
 
   let attributes = Ember.merge({}, config.APP);

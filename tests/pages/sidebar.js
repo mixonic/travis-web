@@ -9,7 +9,7 @@ import {
   hasClass
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   visit: visitable('/'),
   repoTitle: text('.repo-header h1.repo-title'),
   clickSidebarMyReposTab: clickable('#tab_owned a'),

@@ -1,12 +1,12 @@
 import { module } from 'qunit';
 import Ember from 'ember';
-import startApp from '../helpers/start-app';
-import destroyApp from '../helpers/destroy-app';
+import startApp from "./start-app";
+import destroyApp from "./destroy-app";
 import '../helpers/percy/register-helpers';
 
 const { RSVP: { Promise } } = Ember;
 
-export default function (name, options = {}) {
+export const helpers = function (name, options = {}) {
   module(name, {
     beforeEach() {
       this.application = startApp();

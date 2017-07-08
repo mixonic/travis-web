@@ -7,7 +7,7 @@ let {
   visitable
 } = PageObject;
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable(':organization/:repo'),
   notActiveHeadline: text('.missing-notice .page-title'),
   notActiveNotice: text('.missing-notice .page-notice'),

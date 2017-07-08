@@ -1,6 +1,11 @@
 /* eslint-env node */
 module.exports = function (environment) {
   var ENV = {
+    'ember-resolver': {
+      features: {
+        EMBER_RESOLVER_MODULE_UNIFICATION: true
+      }
+    },
     modulePrefix: 'travis',
     environment: environment,
     rootURL: '/',
@@ -10,6 +15,7 @@ module.exports = function (environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        'ember-module-unification': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding `Date.parse`.

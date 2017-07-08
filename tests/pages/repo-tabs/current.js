@@ -6,7 +6,7 @@ import {
   isVisible
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   visit: visitable('travis-ci/travis-web'),
   currentTabActive: hasClass('active', '#tab_current'),
   showsNoBuildsMessaging: text('.missing-notice h2.page-title'),

@@ -9,7 +9,7 @@ let {
   text
 } = PageObject;
 
-export default PageObject.create({
+export const pages = PageObject.create({
   scope: '.topbar',
 
   broadcastTower: {

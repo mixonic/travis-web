@@ -21,7 +21,7 @@ function hooksCollection(scope) {
   });
 }
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable('profile/:username'),
   name: text('.profile-header h1'),
 

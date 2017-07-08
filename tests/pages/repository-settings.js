@@ -11,7 +11,7 @@ let {
   visitable
 } = PageObject;
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable(':organization/:repo/settings'),
 
   notification: text('p.flash-message'),

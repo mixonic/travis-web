@@ -7,7 +7,7 @@ import {
   isHidden
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   configTab: {
     click: clickable('#tab_config'),
     contents: text('#config_pre'),

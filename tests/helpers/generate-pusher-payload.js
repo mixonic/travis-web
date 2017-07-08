@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export default function generatePusherPayload(model, overrides = {}) {
+export const helpers = function generatePusherPayload(model, overrides = {}) {
   let result = {};
 
   Object.keys(model.attrs).forEach((key) => {

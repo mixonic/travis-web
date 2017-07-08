@@ -9,7 +9,7 @@ let {
   text
 } = PageObject;
 
-export default PageObject.create({
+export const pages = PageObject.create({
   visit: visitable('travis-ci/travis-web/jobs/1'),
 
   branch: text('.commit-branch'),

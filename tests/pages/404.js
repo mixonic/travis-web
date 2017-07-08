@@ -4,7 +4,7 @@ import {
   text
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   visit: visitable('/404'),
   errorHeader: text('.error-text'),
 });

@@ -4,7 +4,7 @@ import {
   visitable
 } from 'ember-cli-page-object';
 
-export default create({
+export const pages = create({
   visit: visitable('/'),
   headerWrapperWhenUnauthenticated: contains('.topbar', { scope: '.feature-wrapper .top.landing-pro header.top' }),
   headerWrapperWhenAuthenticated: contains('.topbar', { scope: '.feature-wrapper .main .wrapper.non-centered header.top' }),
